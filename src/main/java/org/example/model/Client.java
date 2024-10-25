@@ -1,5 +1,8 @@
 package org.example.model;
 
+/**
+ * Simple class representing a client using a totem to order food.
+ */
 public class Client {
     private String name;
 

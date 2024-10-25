@@ -6,6 +6,12 @@ import org.example.model.Order;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Simulates a screen showing every order that has been done, so the client can go there get it.
+ *
+ * Is a JFrame-based class that represents the kitchen display for the restaurant system.
+ * It displays the status of each order as they are processed in real-time.
+ */
 public class KitchenScreen extends JFrame {
     private JPanel jPanel;
     private JTextArea jTextArea;
@@ -36,6 +42,12 @@ public class KitchenScreen extends JFrame {
         setVisible(true);
     }
 
+    /**
+     * Displays the status of the given order by creating a new thread to simulate order preparation
+     * and a SwingWorker to update the user interface once the preparation is complete.
+     *
+     * @param order the order to be processed and displayed in the kitchen screen
+     */
     protected void kitchenReturn(Order order) {
 
         if (order != null) {

@@ -12,6 +12,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * Simulates an Order Totem, like fast-foods use to get order from clients.
+ *
+ * Is a JFrame-based class representing a client order interface in a restaurant system.
+ * It allows clients to select menu items and enter their names to place an order.
+ */
 public class OrderTotem extends JFrame {
     private JPanel jPanel;
     private MenuService menuService;
@@ -38,6 +44,12 @@ public class OrderTotem extends JFrame {
         kitchenScreen = new KitchenScreen();
     }
 
+    /**
+     * Initializes the list of menu items for selection and sets up client information input fields.
+     * Includes the "Submit order" button to submit the selected items.
+     *
+     * @return JPanel containing the menu items and submit button
+     */
     private JPanel menuList() {
         jPanel = new JPanel();
         menuService = new MenuService();
@@ -60,7 +72,7 @@ public class OrderTotem extends JFrame {
 
         sendClientName.addActionListener(e -> {
             String clientName = clientNameField.getText().trim();
-            if(!clientName.isEmpty()){
+            if (!clientName.isEmpty()) {
                 client = new Client(clientName);
                 clientNameFrame.dispose();
 
@@ -94,7 +106,7 @@ public class OrderTotem extends JFrame {
                 }
             }
 
-            if(selectedItems.isEmpty()) {
+            if (selectedItems.isEmpty()) {
                 JOptionPane.showMessageDialog(jPanel, "Please select at least one item.");
             } else {
                 clientNameFrame.setVisible(true);

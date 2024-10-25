@@ -5,6 +5,10 @@ import org.example.model.Menu;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Service class for managing and retrieving menu items.
+ * Provides a list of menu items with details.
+ */
 public class MenuService {
     private List<Menu> listMenu;
 
