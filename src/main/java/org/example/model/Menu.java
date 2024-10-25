@@ -1,5 +1,8 @@
 package org.example.model;
 
+/**
+ * Abstraction of a menu in an order totem.
+ */
 public class Menu {
     private String id;
     private String name;
@@ -49,6 +52,13 @@ public class Menu {
         this.timePreparation = timePreparation;
     }
 
+    /**
+     * Returns a formatted String of the menu, and uses HTML to organize the content visually.
+     *
+     * The swing class supports a subset of HTML to render texts in components like JLabel or JCheckBox.
+     *
+     * @return a string representation of the menu item.
+     */
     @Override
     public String toString() {
         return "<html>" + "<h3>" + id + ". " + name + " - R$" + price + "</h3>" + "<br>" +

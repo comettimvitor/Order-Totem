@@ -4,6 +4,9 @@ import org.example.model.Order;
 
 import java.util.*;
 
+/**
+ * Class that manages and handle operations related to orders.
+ */
 public class OrderService {
     private List<Order> orders;
     private Set<Integer> generatedNumbers = new HashSet<>();
@@ -20,6 +23,12 @@ public class OrderService {
         return orders;
     }
 
+    /**
+     * Generates a unique order ID within the range of 10000 to 99999.
+     * Ensures that the generated ID is unique by storing it in a set.
+     *
+     * @return a number that becomes the ID of an order.
+     */
     public Set<Integer> generateOrderId() {
         Random random = new Random();
         int randomNumber;

@@ -3,6 +3,12 @@ package org.example.model;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * A class representing an order in the restaurant system.
+ *
+ * Each order has a unique identifier, a list of menu items, a status indicating the preparation stage,
+ * and a client associated with it.
+ */
 public class Order {
     private Set<Integer> id;
     private List<Menu> itens;
