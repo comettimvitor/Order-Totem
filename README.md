@@ -1,5 +1,5 @@
 # Multithreading
-Is a technique that allows a program or operating system to handle multiple requests or users at once, without require multiple copies of the program. Is related to the concept of concurrency and paralelism.
+Is a execution model that allows a program or operating system to handle multiple requests or users at once, without require multiple copies of the program. Is related to the concept of concurrency and paralelism.
 
 - Concurrency refers to executing multiple tasks at the same time.
 - Paralelism refers to executing multiple tasks simultaneously on different processing cores.
