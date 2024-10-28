@@ -1,8 +1,8 @@
 # Multithreading
 Is a tchenique that allows a program or operating system to handle multiple requests or user at once, without require multiple copies of the program. Is related to the concept of concurrency and paralelism.
 
--Concurrency refers to executing multiple tasks at the same time.
--Paralelism refers to executing multiple tasks simultaneously on different processing cores.
+- Concurrency refers to executing multiple tasks at the same time.
+- Paralelism refers to executing multiple tasks simultaneously on different processing cores.
 
 # Order Totem
 Totem for orders using multithreading concept.
